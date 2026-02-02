@@ -12,8 +12,47 @@
     </p>
     <form name="sociedad" action="#" method="post" target="_blank" >
         
+        <p>Ingrese su nombre completo</p>
         <input type="text" name="Nombre" id="Nombre"  value="Ales" form="sociedad" size="10">
-        <input type="email" placeholder="Ingrese el email" autofocus>
+        <p>Ingrese su correo electronico</p>
+        <input type="email" name="email" placeholder="Ingrese el email" autofocus>
+        <P>Carga tu retrato para la gala</P>
+        <input type="file" name="foto" id="foto" value="cargar foto" accept=".png, .jpeg, .jpg">
+        <p>Ingresa tu edad</p>
+        <input type="number" name="edad" id="edad">
+        <p>Roles de la alta sociedad</p>
+        <input type="text" name="rol" id="rol" list="rangos_sociedad" placeholder="Escoja su rol en la sociedad">
+        <datalist id="rangos_sociedad">
+            <option value="Rey/Reina"></option>
+            <option value="Marques/a"></option>
+            <option value="Code/sa"></option>
+            <option value="vizconde/sa"></option>
+            <option value="Baron/esa"></option>
+            <option value="Lady"></option>
+            <option value="Lord"></option>
+            <option value="Debutante"></option>
+            <option value="Caballero(sir)"></option>
+        </datalist>        
+        <input type="range" name="Prueba" id="Prueba">
+        <input type="search" name="prueba" id="prueba">
+        <input type="tel" name="prueb" id="prueb">
+        <input type="time" name="tiempo" id="tiempo">
+        <input type="reset" value="res">
+        <input type="url" name="link" id="link">
+        <p>Género</p>
+        <input type="radio" name="genero" id="genero" value="F">Femenino
+        <input type="radio" name="genero" id="genero" value="M">Maculino
+        <p>Idioma dominante del lugar de origen</p>
+        <input type="radio" name="idioma" id="idioma" value="Es">Español
+        <input type="radio" name="idioma" id="idioma" value="En">Ingles
+        <input type="radio" name="idioma" id="idioma" value="Fr">Frances
+        <p>Virtud que más te representa</p>
+        <input type="checkbox" name="virtud" id="vitud" value="Honestidad">Honestidad
+        <input type="checkbox" name="virtud" id="vitud" value="Lealtad">Lealtad
+        <input type="checkbox" name="virtud" id="vitud" value="Valentia">valentía
+        <input type="checkbox" name="virtud" id="vitud" value="Elegacia">Elegancia
+        <p>Contraseña</p>
+        <input type="password" name="contraseña" id="contraseña">
         <input type="submit" name="Enviar" value="Enviar">
     </form>
 </body>
