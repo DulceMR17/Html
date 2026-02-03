@@ -27,7 +27,7 @@ a:hover {
 }
 
 blockquote {
-    border-left: 4px solid #ce93d8;
+    border-left: 4px solid #bc9ec2;
     margin: 10px 0;
     padding-left: 10px;
     color: #4a0d96;
@@ -59,4 +59,9 @@ th, td {
 th {
     background-color: #d1c4e9;
     text-align: center;
+}
+.formulario{
+    font-size: 20px;
+    color: #6a1b9a;
+    font-weight: bold;
 }
