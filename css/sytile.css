@@ -46,3 +46,17 @@ mark {
     background-color: #786ed69d;
     padding: 0 4px;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #a71fac;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #d1c4e9;
+    text-align: center;
+}
