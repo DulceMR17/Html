@@ -11,50 +11,57 @@
     <p>
         El siguiente formulario tiene como objetivo recopilar información sobre los integrantes de la alta sociedad representados en Los Bridgerton. A través de las preguntas planteadas, se busca conocer aspectos personales, valores, intereses y decisiones que definen a cada personaje durante la temporada social, permitiendo una mejor comprensión de su comportamiento dentro del contexto social de la época.
     </p>
-    <form name="sociedad" action="#" method="post" target="_blank" >
-        
-        <p>Ingrese su nombre completo</p>
-        <input type="text" name="Nombre" id="Nombre"  value="Ales" form="sociedad" size="10">
-        <p>Ingrese su correo electronico</p>
-        <input type="email" name="email" placeholder="Ingrese el email" autofocus>
-        <P>Carga tu retrato para la gala</P>
-        <input type="file" name="foto" id="foto" value="cargar foto" accept=".png, .jpeg, .jpg">
-        <p>Ingresa tu edad</p>
-        <input type="number" name="edad" id="edad">
-        <p>Roles de la alta sociedad</p>
-        <input type="text" name="rol" id="rol" list="rangos_sociedad" placeholder="Escoja su rol en la sociedad">
-        <datalist id="rangos_sociedad">
-            <option value="Rey/Reina"></option>
-            <option value="Marques/a"></option>
-            <option value="Code/sa"></option>
-            <option value="vizconde/sa"></option>
-            <option value="Baron/esa"></option>
-            <option value="Lady"></option>
-            <option value="Lord"></option>
-            <option value="Debutante"></option>
-            <option value="Caballero(sir)"></option>
-        </datalist>        
-        <input type="range" name="Prueba" id="Prueba">
-        <input type="search" name="prueba" id="prueba">
-        <input type="tel" name="prueb" id="prueb">
-        <input type="time" name="tiempo" id="tiempo">
-        <input type="reset" value="res">
-        <input type="url" name="link" id="link">
-        <p>Género</p>
-        <input type="radio" name="genero" id="genero" value="F">Femenino
-        <input type="radio" name="genero" id="genero" value="M">Maculino
-        <p>Idioma dominante del lugar de origen</p>
-        <input type="radio" name="idioma" id="idioma" value="Es">Español
-        <input type="radio" name="idioma" id="idioma" value="En">Ingles
-        <input type="radio" name="idioma" id="idioma" value="Fr">Frances
-        <p>Virtud que más te representa</p>
-        <input type="checkbox" name="virtud" id="vitud" value="Honestidad">Honestidad
-        <input type="checkbox" name="virtud" id="vitud" value="Lealtad">Lealtad
-        <input type="checkbox" name="virtud" id="vitud" value="Valentia">valentía
-        <input type="checkbox" name="virtud" id="vitud" value="Elegacia">Elegancia
-        <p>Contraseña</p>
-        <input type="password" name="contraseña" id="contraseña">
-        <input type="submit" name="Enviar" value="Enviar">
-    </form>
+    <div>
+        <form name="sociedad" action="#" method="post" target="_blank" >
+            <p>Ingrese su nombre completo</p>
+            <input class="estilos1" type="text" name="Nombre" id="Nombre"  value="Ales" form="sociedad" size="10">
+            <p>Ingrese su correo electronico</p>
+            <input class="estilos1" type="email" name="email" placeholder="Ingrese el email" autofocus>
+            <P>Carga tu retrato para la gala</P>
+            <input class="estilos1" type="file" name="foto" id="foto" value="cargar foto" accept=".png, .jpeg, .jpg">
+            <p>Ingresa tu edad</p>
+            <input class="estilos1" type="number" name="edad" id="edad">
+            <p>Roles de la alta sociedad</p>
+            <input class="estilos1" type="text" name="rol" id="rol" list="rangos_sociedad" placeholder="Escoja su rol en la sociedad">
+            <datalist id="rangos_sociedad">
+                <select class="estilos1" name="rol" id=""></select>
+                <option value="Ninguno"></option>
+                <option value="Rey/Reina"></option>
+                <option value="Marques/a"></option>
+                <option value="Code/sa"></option>
+                <option value="vizconde/sa"></option>
+                <option value="Baron/esa"></option>
+                <option value="Lady"></option>
+                <option value="Lord"></option>
+                <option value="Debutante"></option>
+                <option value="Caballero(sir)"></option>
+            </datalist>        
+            <p>Nivel de prestigio que posee la familia</p>
+            <input class="estilos1" type="range" name="Prueba" id="Prueba">
+            <p>Número de contacto</p>
+            <input class="estilos1" type="tel" name="prueb" id="prueb">
+            <p>Hora de llegada a la gala</p>
+            <input class="estilos1" type="time" name="tiempo" id="tiempo">
+            <p>Enlace del perfil de la familia</p>
+            <input class="estilos1" type="url" name="link" id="link">
+            <p>Género</p>
+            <input type="radio" name="genero" id="genero" value="F">Femenino
+            <input type="radio" name="genero" id="genero" value="M">Maculino
+            <p>Idioma dominante del lugar de origen</p>
+            <input type="radio" name="idioma" id="idioma" value="Es">Español
+            <input type="radio" name="idioma" id="idioma" value="En">Ingles
+            <input type="radio" name="idioma" id="idioma" value="Fr">Frances
+            <p>Virtud que más te representa</p>
+            <input type="checkbox" name="virtud" id="vitud" value="Honestidad">Honestidad
+            <input type="checkbox" name="virtud" id="vitud" value="Lealtad">Lealtad
+            <input type="checkbox" name="virtud" id="vitud" value="Valentia">valentía
+            <input type="checkbox" name="virtud" id="vitud" value="Elegacia">Elegancia
+            <p>Contraseña</p>
+            <input class="estilos1" type="password" name="contraseña" id="contraseña">
+            <br><br>
+            <input type="reset" value="Limpiar formulario"> 
+            <input type="submit" name="Enviar" value="Enviar">
+        </form>
+    </div>
 </body>
 </html>
