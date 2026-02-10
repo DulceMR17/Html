@@ -1,39 +1,114 @@
+/* ===== ENCABEZADO ===== */
+.encabezado {
+    background-color: #d1c4e9;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0 0 30px 0;
+}
+
+.encabezado__titulo {
+    color: #6a1b9a;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+/* ===== ESTILOS GENERALES ===== */
 body {
     background-color: #f0e6f6;
     font-family: Arial, sans-serif;
     margin: 20px;
 }
+
 p {
-    color: #4a148c;
+    color: #4a0d96;
     line-height: 1.6;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 h1 {
     color: #6a1b9a;
+    text-align: center;
 }
 
 h2, h3, h4, h5, h6 {
     color: #8e24aa;
 }
 
-.menu__item {
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* ===== NAVEGACIÓN FIJA ===== */
+.navegacion {
+    position: sticky;
+    top: 10px;
+    height: fit-content;
+    background-color: #d1c4e9;
+}
+
+/* ===== MENÚ LATERAL ===== */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a,
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    font-display: swap;
+    padding: 0px;
+    transition: background-color 0.3s ease, color 0.3s ease;
     background-color: #6a1b9a;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 10px 20px;
-    margin-top: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    align-self: center;
+    display: block;
 }
-a{
-  color: #F626FF;
+
+.menu li a:hover,
+.menu a:hover {
+    background-color: #972f97;
+    color: #1e003a;
 }
+
+.menu__item {
+    border-radius: 15px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu__item:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== CONTENIDO ===== */
+.contenido {
+    max-width: 850px;
+}
+
+/* ===== ENLACES GENERALES ===== */
+a {
+    color: #F626FF;
+    text-decoration-line: none;
+    margin-top: 1px;
+}
+
 a:hover {
     color: pink;
 }
 
+/* ===== BLOQUES Y ELEMENTOS ===== */
 blockquote {
     border-left: 4px solid #bc9ec2;
     margin: 10px 0;
@@ -50,25 +125,32 @@ video {
     margin-top: 10px;
     border-radius: 8px;
 }
+
 mark {
     background-color: #786ed69d;
     padding: 0 4px;
 }
+
+/* ===== TABLAS ===== */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
+
 th, td {
     border: 1px solid #a71fac;
     padding: 8px;
     text-align: left;
 }
+
 th {
     background-color: #d1c4e9;
     text-align: center;
 }
-.formulario{
+
+/* ===== FORMULARIO ===== */
+.formulario {
     font-size: 20px;
     color: #6a1b9a;
     font-weight: bold;
