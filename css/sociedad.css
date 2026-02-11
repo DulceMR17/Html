@@ -35,6 +35,7 @@ h1 {
 
 h2, h3, h4, h5, h6 {
     color: #8e24aa;
+    text-align: center;
 }
 
 /* ===== NAVEGACIÓN FIJA ===== */
@@ -98,7 +99,7 @@ a:hover {
 input[type="radio"], input[type="checkbox"] {
     margin: 10px;
 }
-input[type="submit"], input[type="reset"], a {
+input[type="submit"], input[type="reset"]{
     background-color: #6a1b9a;
     color: white;
     border: none;

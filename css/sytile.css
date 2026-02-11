@@ -1,8 +1,7 @@
 /* ===== ENCABEZADO ===== */
 .encabezado {
     display: flex;
-    text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #e8c1d9;
     padding: 5px 5px;
 
@@ -10,7 +9,6 @@
 
 .encabezado__titulo {
     color: #c9a44c;
-    text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
 }
@@ -30,11 +28,12 @@ p {
 
 h1 {
     color: #6a1b9a;
-    text-align: center;
+    justify-content: center;
 }
 
 h2, h3, h4, h5, h6 {
     color: #8e24aa;
+
 }
 
 /* ===== NAVEGACIÓN FIJA ===== */
@@ -47,7 +46,7 @@ h2, h3, h4, h5, h6 {
  .contenedor-principal {
     display: flex;
     margin-top: 2px; /* espacio por la barra superior */
-    height: calc(100vh - 60px);
+    height: calc(70vh - 40px);
 }
 .menu {
     width: 240px;
@@ -125,6 +124,63 @@ th, td {
 th {
     background-color: #d1c4e9;
     text-align: center;
+}
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #eecf9e;
+    color: white;
+    padding: 40px 20px 10px 20px;
+    margin: 0px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-seccion {
+    width: 500px;
+}
+
+.footer-seccion h3 {
+    color: #907dfc;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-seccion p,
+.footer-seccion ul {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.footer-seccion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-seccion ul li {
+    margin-bottom: 8px;
+}
+
+.footer-seccion a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-seccion a:hover {
+    color: #f8cb6b;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #f8cb6b;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 13px;
 }
 
 
