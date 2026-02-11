@@ -2,22 +2,36 @@
 .encabezado {
     display: flex;
     justify-content: center;
-    background-color: #e8c1d9;
     padding: 5px 5px;
+    width: 100%;
+    height: 156px;
+    margin: auto;
+    background: url('../imagenes/fondo-terracota-dibujado-mano_23-2149550796.jpg');
+    animation: caminar 3s steps(2) infinite;
+    position: relative;
+    bottom: auto;
+    animation-delay: 2s;
+    
+    }
+    /* En keyframes siempre se debe poner talcual el nombre de la aniamcion */
+    @keyframes caminar{
+    0%{ background-position: 550px}
+    100%{ background-position:0px }
+    }
 
-}
 
 .encabezado__titulo {
-    color: #c9a44c;
+    color: #1b1811e7;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 80px;
 }
 
 /* ===== ESTILOS GENERALES ===== */
  body {
     margin: 0;
-    background-color: #eecf9e;
+    background-image: linear-gradient(to right, rgb(110, 77, 230), rgb(237, 192, 255),  rgb(112, 119, 209, 0.938) );
     font-family: Arial, sans-serif;
+    color: black;
 }
 
 p {
@@ -50,7 +64,8 @@ h2, h3, h4, h5, h6 {
 }
 .menu {
     width: 240px;
-    background-color: #f8cb6be5;
+    height: 655px;
+    background-color: #9373e944;
     padding: 10px 0;
 }
         .menu .menu__item {
@@ -66,10 +81,13 @@ h2, h3, h4, h5, h6 {
             background-color: #3a3b3c;
             color: #b0b3b8;
         }
+        .menu__subtitulo{
+            font-size: 20px;
+        }
 /* ===== CONTENIDO ===== */
 .contenido {
             flex-grow: 1;
-            background-color:pink;
+            background-color:rgb(196, 142, 150);
             padding: 10px 20px;
             overflow-y: auto;
         }
@@ -127,7 +145,7 @@ th {
 }
 /* ===== FOOTER ===== */
 .footer {
-    background-color: #eecf9e;
+    background-image: linear-gradient(to right, rgb(110, 77, 230), rgb(237, 192, 255),  rgb(112, 119, 209, 0.938) );
     color: white;
     padding: 40px 20px 10px 20px;
     margin: 0px;
@@ -177,10 +195,8 @@ th {
 
 .footer-bottom {
     text-align: center;
-    border-top: 1px solid #f8cb6b;
+    border-top: 1px solid #806bf8be;
     margin-top: 20px;
     padding-top: 10px;
     font-size: 13px;
 }
-
-
