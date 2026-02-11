@@ -1,11 +1,91 @@
+/* ===== ENCABEZADO ===== */
+.encabezado {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #e8c1d9;
+    padding: 5px 5px;
+
+}
+
+.encabezado__titulo {
+    color: #c9a44c;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+/* ===== ESTILOS GENERALES ===== */
+ body {
+    margin: 0;
+    background-color: #eecf9e;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: #4a0d96;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 h1 {
     color: #6a1b9a;
     text-align: center;
 }
-p {
-    color: #4a148c;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+h2, h3, h4, h5, h6 {
+    color: #8e24aa;
 }
+
+/* ===== NAVEGACIÓN FIJA ===== */
+.navegacion {
+    position: sticky;
+    top: 10px;
+    height: fit-content;
+    background-color: #d1c4e9;
+}
+ .contenedor-principal {
+    display: flex;
+    margin-top: 2px; /* espacio por la barra superior */
+    height: calc(100vh - 60px);
+}
+.menu {
+    width: 240px;
+    background-color: #f8cb6be5;
+    padding: 10px 0;
+}
+        .menu .menu__item {
+            padding: 12px 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 15px;
+        }
+        .menu .menu__item:hover {
+            background-color: #3a3b3c;
+            color: #b0b3b8;
+        }
+/* ===== CONTENIDO ===== */
+.contenido {
+            flex-grow: 1;
+            background-color:pink;
+            padding: 10px 20px;
+            overflow-y: auto;
+        }
+
+/* ===== ENLACES GENERALES ===== */
+a {
+    color: #F626FF;
+    text-decoration-line: none;
+    margin-top: 1px;
+}
+
+a:hover {
+    color: pink;
+}
+
 .estilos1{
     width: 100%;
     padding: 5px;
@@ -34,7 +114,7 @@ input[type="file"]{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px; 
 }
-div {
+.formulario {
     margin-bottom: 15px;
     background-color: hwb(275 69% 13%);
     padding: 10px;
@@ -42,10 +122,4 @@ div {
     margin: 50px 50px 50px 50px;
     display: grid;
     width: auto;
-}
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 20px;
-    background-color: #f3e5f5;
-    place-items: center;
 }
