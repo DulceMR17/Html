@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Guìa de aprendizaje bàsico en html ">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guìa de aprendizaje bàsico en html ">
     <meta name="keywords" content="HTML, css, pagina  web, campus Tec">
     <meta name="author" content="Dulce Morales">
     <meta name="aplication-name" content="campus html">
@@ -13,69 +13,28 @@
     <link rel="shortcut icon" href="/imagenes/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/imagenes/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/imagenes/favicon/site.webmanifest" />
-   <link rel="stylesheet" href="../css/sociedad.css">
-    <title>Bridgerton</title>
+<title>Alta Sociedad</title>
+<link rel="stylesheet" href="../css/sociedad.css">
+<script defer src="js/script.js"></script>
 </head>
 <body>
 
-    <header class="encabezado">
-        <h1 class="encabezado__titulo">Bridgerton</h1>
-    </header>
-    <!-- CONTENEDOR PRINCIPAL -->
-<div class="contenedor-principal">
+<div class="layout">
+<nav class="sidebar">
+<h2>👑 Bridgerton</h2>
+<a href="../pages/season_1_Daphne.html">Daphne</a>
+<a href="../pages/season_2_Anthony.html">Anthony</a>
+<a href="../pages/season_3_colin.html">Colin</a>
+<a href="../pages/season_4_benedict.html">Benedict</a>
+<a href="../pages/season_5_francesca.html">Francesca</a>
+<a href="../pages/Altas_sociedad.html">Alta Sociedad</a>
+<a class="toggle-btn" id="toggleMode" href="../index.html">Inicio</a>
+</nav>
 
-    <!-- MENÚ LATERAL -->
-    <nav class="navegacion">
-        <div class="menu">
-            <a href="../index.html">
-                <div class="menu__item">
-                    <img class="icon" src="../imagenes/pagina-de-inicio.png" width="25" height="25" alt="Icono inicio">
-                    <span class="menu__subtitulo">Inicio</span>
-                </div>
-            </a>
-            <a href="../pages/season_1_Daphne.html">
-                <div class="menu__item">
-                    <img class="icon" src="../imagenes/libro-abierto.png" width="25" height="25" alt="Icono libro">
-                    <span class="menu__subtitulo">El duque y yo</span>
-                </div>
-            </a>
-            <a href="../pages/season_2_Anthony.html">
-                <div class="menu__item">
-                    <img class="icon" src="../imagenes/libro-abierto.png" width="25" height="25" alt="Icono libro">
-                    <span class="menu__subtitulo">El vizconde que me amó</span>
-                </div>
-            </a>
-            <a href="../pages/season_3_Colin.html">
-                <div class="menu__item">
-                    <img class="icon" src="../imagenes/libro-abierto.png" width="25" height="25" alt="Icono libro">
-                    <span class="menu__subtitulo">Seduciendo a Mr. Bridgerton</span>
-                </div>
-            </a>
-            <a href="../pages/season_4_Benedict.html">
-                <div class="menu__item">
-                    <img class="icon" src="../imagenes/libro-abierto.png" width="25" height="25" alt="Icono libro">
-                    <span class="menu__subtitulo">Te doy mi corazón</span>
-                </div>
-            </a>
-            <a href="../pages/season_5_Francesca.html">
-                <div class="menu__item">
-                    <img class="icon" src="../imagenes/libro-abierto.png" width="25" height="25" alt="Icono libro">
-                    <span class="menu__subtitulo">El corazón de una Bridgerton</span>
-                </div>
-            </a>
-        </div>
-</div>
-    </nav>
-
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="contenido">
-        <h4>Registro a la alta sociedad</h4>
-        <p>
-            El siguiente formulario tiene como objetivo recopilar información sobre los integrantes 
- de la alta sociedad. A través de las preguntas planteadas, se busca conocer aspectos 
- personales, valores, intereses y decisiones que definen a cada persona durante la temporada 
- social, permitiendo una mejor comprensión de su comportamiento dentro del contexto social de la época.
-        </p>
+<main class="content">
+<div class="card">
+<h1>Alta Sociedad</h1>
+</p>
 
         <div class="formulario">
             <form name="sociedad" action="#" method="post" target="_blank" >
@@ -123,31 +82,47 @@
             <input type="checkbox" name="virtud" id="vitud" value="Valentia">valentía
             <input type="checkbox" name="virtud" id="vitud" value="Elegacia">Elegancia
             <p>Contraseña</p>
-            <input class="estilos1" type="password" name="contraseña" id="contraseña">
+            <input class="estilos1" type="password" name="contraseña" id="contraseña" placeholder="Ingrese la contraseña">
             <br><br>
             <input type="reset" value="Limpiar formulario"> 
             <input type="submit" name="Enviar" value="Enviar">
             </form>
-            </div>
-
-    </main>
-    <footer class="footer">
-    <div class="footer-contenido">
-
-        <div class="footer-seccion">
-            <h3>Sobre la Sociedad</h3>
-            <p>
-                Página dedicada al universo de Bridgerton y la alta sociedad londinense.
-                “Querido lector, la elegancia nunca pasa de moda.”
-            </p>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2026 Dulce Morales | Inspirado en la serie Bridgerton</p>
-</footer>
+            </div></p>
 </div>
+</main>
+</div>
+
+
+<footer class="footer">
+<div class="footer__container">
+
+<div>
+<h3>👑 Universo Bridgerton</h3>
+<p>Proyecto académico inspirado en la serie.</p>
+</div>
+
+<div>
+<h4 class="footer__subtitle">Temporadas</h4>
+<ul class="footer__list">
+<li><a href="season_1_Daphne.html">Daphne</a></li>
+<li><a href="season_2_Anthony.html">Anthony</a></li>
+<li><a href="season_3_colin.html">Colin</a></li>
+</ul>
+</div>
+
+<div>
+<h4 class="footer__subtitle">Información</h4>
+<p>Alta Sociedad</p>
+<p>Proyecto Web 2026</p>
+</div>
+
+</div>
+
+<div class="footer__bottom">
+<p>© 2026 Alexandra | Todos los derechos reservados</p>
+</div>
+</footer>
+
 
 </body>
 </html>
